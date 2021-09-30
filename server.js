@@ -2,8 +2,20 @@ const express = require('express');
 const cors = require('cors');
 const stripe = require('stripe')('sk_test_51Jdg2JSFP1EbIRNuDqgmAYEePqqp0Ong4AgXGzSWoRxtHtpTwQNEgyNfyZMk0Ts807QyncQxP9wrXFcAtuuukyUY00BlmNJEqd')
 const {v4: uuidv4} = require('uuid');
+const path = require('path');
 
 const app = express();
+
+
+const PORT = process.env.PORT || 8080;
+
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static('build'));
+    app.get('*', (req,res) => {
+        res.sendFile(path.resolve(__dirname,'build','index.html'))
+    })
+}
+
 app.use(cors());
 app.use(express.json());
 
@@ -47,5 +59,4 @@ app.post('/checkout', async (req,res) => {
     res.json({status});
 })
 
-const PORT = 8080;
-app.listen(PORT, () => console.log('Backend Running on Port 8080'));
+app.listen(PORT, () => console.log(`Backend Running on Port ${PORT}`));

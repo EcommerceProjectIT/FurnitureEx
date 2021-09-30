@@ -101,7 +101,7 @@ const Cart = () => {
     const handleToken = async (token) => {
         // console.log(token);
         const cart = { name: 'All Products', totalPrice };
-        const response = await axios.post('http://localhost:8080/checkout',{
+        const response = await axios.post('https://furnitureex.herokuapp.com/checkout',{
             token,
             cart
         });
