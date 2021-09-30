@@ -1,0 +1,61 @@
+.errorDiv {
+    display: grid;
+    place-content: center;
+    height: 90vh;
+}
+
+.errorContent {
+    display: flex;
+    align-items: center;
+}
+
+#warningIcon {
+    width: 80px;
+    margin-right: 20px;
+    animation: shake 0.4s linear;
+}
+
+.errorBody>p {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 786px) {
+    #warningIcon {
+        width: 60px;
+        margin-right: 20px;
+    }
+
+    .errorHead>h1 {
+        font-size: 20px;
+    }
+
+    .errorBody>p {
+        font-size: 14px;
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(-5px);
+    }
+
+    20% {
+        transform: translateX(5px);
+    }
+
+    40% {
+        transform: translateX(-5px);
+    }
+
+    60% {
+        transform: translateX(5px);
+    }
+
+    80% {
+        transform: translateX(-5px);
+    }
+
+    100% {
+        transform: translateX(5px);
+    }
+}

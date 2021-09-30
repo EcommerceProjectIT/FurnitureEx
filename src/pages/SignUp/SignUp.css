@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ebebeb;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    margin-top: 20px;
+    padding: 20px;
+    width: fit-content;
+    border: 1px solid rgb(201, 201, 201);
+    border-radius: 5px;
+}
+
+.card h1 {
+    font-weight: 600;
+}
+
+.form_field {
+    margin: 20px 0px;
+}
+
+.form_field>h3 {
+    font-weight: 400;
+}
+
+.form_field>input {
+    outline: none;
+    font-size: 20px;
+    padding: 5px;
+    width: 400px;
+    margin-top: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 18px;
+    background: rgb(43, 113, 192);
+    border-radius: 5px;
+    color: white;
+    outline: none;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+    background: rgb(54, 131, 219);
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+.footer>a {
+    text-decoration: none;
+    margin-left: 10px;
+    color: rgb(39, 99, 167);
+}
+
+.msg {
+    margin: 10px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.error {
+    background-color: rgba(255, 0, 0, 0.404);
+}
+
+.success {
+    background-color: rgba(0, 255, 21, 0.404);
+}

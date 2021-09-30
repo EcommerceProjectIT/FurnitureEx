@@ -1,0 +1,41 @@
+.individualProduct {
+    background: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.24), 0 1px 2px rgba(0, 0, 0, 0.24);
+    display: flex;
+    align-items: center;
+}
+
+.individualProduct > img {
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.individualProduct .cart_details {
+    margin-left: 50px;
+    width: 250px;
+}
+
+.cart_quantity_btn {
+    display: flex;
+    margin-left: 10px;
+    justify-content: space-between;
+    width: 160px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.delete {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.delete_btn {
+    width: max-content;
+}

@@ -1,0 +1,79 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* modal */
+.shade-area{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container{
+  width: 300px;
+  height: auto;
+  padding: 30px 20px;
+  background-color: #fff;
+  position: relative;
+  border-radius: 10px;
+}
+
+.delete-icon{
+  background-color: #e00a02;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  cursor: pointer;
+}
+
+.form-control {
+  outline: none;
+  width: 95%;
+  padding: 5px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 1px solid darkgoldenrod;
+  background-color: rgb(255, 216, 203);
+}
+
+input:read-only {
+  background-color: rgb(155, 179, 224);
+  border: 1px solid rgb(116, 135, 170);
+}
+.btnn {
+  background-color: green;
+  width: fit-content;
+  padding: 5px 10px;
+}
+.btnn:hover {
+  background-color: rgb(7, 150, 7);
+}

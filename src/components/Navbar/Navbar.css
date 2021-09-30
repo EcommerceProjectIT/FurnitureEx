@@ -1,0 +1,54 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(19, 19, 59);
+}
+
+.logo {
+    display: flex;
+    align-items: flex-end;
+}
+
+.logo>h2 {
+    color: white;
+}
+
+.icon {
+    width: 40px;
+    margin-right: 5px;
+}
+
+.link {
+    text-decoration: none;
+    color: White;
+    margin-right: 30px;
+}
+
+.nav_actions {
+    display: flex;
+    align-items: center;
+}
+
+.nav_actions h2 {
+    color: white;
+    margin-right: 20px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.nav_actions h3 {
+    color: black;
+    margin-right: 10px;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.nav_actions h3:hover {
+    cursor: pointer;
+    background-color: rgb(238, 238, 238);
+}
